@@ -17,7 +17,7 @@ const Home = () => {
             <div className="flex flex-col justify-center h-full">
                 <h2 className="text-4xl sm:text-7xl font-bold text-white">I'm a Software Developer</h2>
                 <p>
-                    I'm a second year computer science student. 
+                    I'm a third year computer science student. 
                     Currently, I like to work on web and mobile applications with technologies like
                     React, Kotlin, Next and Java
                 </p>

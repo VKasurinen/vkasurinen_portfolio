@@ -15,7 +15,7 @@ const About = () => {
                 </p>
             </div>
             <p className="text-xl mt-20">
-            Hi, I'm a 20-year-old computer science student.
+            Hi, I'm a 21-year-old computer science student.
             After upper secondary school, I was interested in
             making software and coding in general, and
             because of this, I am now studying computer

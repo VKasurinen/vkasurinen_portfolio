@@ -23,7 +23,7 @@ const SocialLinks = () => {
         GitHub <FaGithub size={30} />
         </>
       ),
-      href: 'https://github.com/VKasurinen/Pikku-projekteja',
+      href: 'https://github.com/VKasurinen',
       style: ''
     },
     {
@@ -33,7 +33,7 @@ const SocialLinks = () => {
         CV <BsFillPersonFill size={30} />
         </>
       ),
-      href: '/CV_Väinö_Kasurinen.pdf',
+      href: '/CV_Väinö_Kasurinen.pdf.pdf',
       style: 'rounded-br-md',
       download: true,
     },
