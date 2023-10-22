@@ -1,7 +1,7 @@
 import React from 'react'
 import gamestoreapp_2 from "../assets/gamestoreapp_2.png"
 import calculator from "../assets/calculator.png"
-import repo from "../assets/repo2.0.png"
+import todo from "../assets/todo.png"
 //import { Link } from 'react-scroll'
 //import {MdOutlineKeyboardArrowRight} from "react-icons/md"
 
@@ -25,8 +25,9 @@ const Portfolio = () => {
 
         {
             id: 3,
-            src: repo,
-            href: "https://github.com/VKasurinen/Pikku-projekteja"
+            src: todo,
+            href: "https://github.com/VKasurinen/TodoWebsiteClient"
+            //href: "https://github.com/VKasurinen/Pikku-projekteja"
 
         },
         

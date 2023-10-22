@@ -19,7 +19,7 @@ const About = () => {
             After upper secondary school, I was interested in
             making software and coding in general, and
             because of this, I am now studying computer
-            science for the second year
+            science for the third year
             </p>
             <br />
             <p className="text-xl">
