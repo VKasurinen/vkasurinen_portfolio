@@ -1,7 +1,7 @@
 import React from 'react'
 import gamestoreapp_2 from "../assets/gamestoreapp_2.png"
 import calculator from "../assets/calculator.png"
-import todo2 from "../assets/todo.png"
+import todo2 from "../assets/todo2.png"
 //import { Link } from 'react-scroll'
 //import {MdOutlineKeyboardArrowRight} from "react-icons/md"
 
