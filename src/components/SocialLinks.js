@@ -33,7 +33,7 @@ const SocialLinks = () => {
         CV <BsFillPersonFill size={30} />
         </>
       ),
-      href: '/CV_Väinö_Kasurinen.pdf.pdf',
+      href: 'Väinö_Kasurinen_CV.pdf',
       style: 'rounded-br-md',
       download: true,
     },

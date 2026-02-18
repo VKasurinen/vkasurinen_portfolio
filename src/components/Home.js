@@ -1,6 +1,6 @@
 import React from 'react'
 //import kuva2 from "..assets/images/unknown.png";
-import kuva from "../assets/kuva.jpg";
+import kuva222 from "../assets/kuva222.jpg";
 
 import {MdOutlineKeyboardArrowRight} from "react-icons/md"
 import { Link } from 'react-scroll';
@@ -17,7 +17,7 @@ const Home = () => {
             <div className="flex flex-col justify-center h-full">
                 <h2 className="text-4xl sm:text-7xl font-bold text-white">I'm a Software Developer</h2>
                 <p>
-                    I'm a third year computer science student. 
+                    I'm a fifth year computer science student. 
                     Currently, I like to work on web and mobile applications with technologies like
                     React, Kotlin, Next and Java
                 </p>
@@ -33,7 +33,7 @@ const Home = () => {
                 </div>
             </div>
             <div>
-                <img src={kuva} alt="my profile" className="rounded-2xl mx-auto w-2/3 object-cover h-70 w-98"/> 
+                <img src={kuva222} alt="my profile" className="rounded-2xl mx-auto w-2/3 object-cover h-70 w-98"/> 
             </div>
         </div>
     </div>

@@ -1,7 +1,7 @@
 import React from 'react'
-import gamestoreapp_2 from "../assets/gamestoreapp_2.png"
-import calculator from "../assets/calculator.png"
-import todo2 from "../assets/todo2.png"
+import gamestorehome from "../assets/gamestorehome.png"
+import notemark from "../assets/notemark.png"
+import news from "../assets/news.png"
 //import { Link } from 'react-scroll'
 //import {MdOutlineKeyboardArrowRight} from "react-icons/md"
 
@@ -12,22 +12,21 @@ const Portfolio = () => {
     const projects = [
         {
             id: 1,
-            src: gamestoreapp_2,
-            href: "https://github.com/luris123/gameStoreApp"
+            src: notemark,
+            href: "https://github.com/VKasurinen/NoteMark"
 
         },
         {
             id: 2,
-            src: calculator,
-            href: "https://github.com/VKasurinen/Pikku-projekteja/tree/main/Calculator_2.0_android/Calculator_20"
+            src: gamestorehome,
+            href: "https://github.com/VKasurinen/Game-Store"
 
         },
 
         {
             id: 3,
-            src: todo2,
-            href: "https://github.com/VKasurinen/TodoWebsiteClient"
-            //href: "https://github.com/VKasurinen/Pikku-projekteja"
+            src: news,
+            href: "https://github.com/VKasurinen/VKNews"
 
         },
         
