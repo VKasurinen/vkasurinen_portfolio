@@ -15,22 +15,20 @@ const About = () => {
                 </p>
             </div>
             <p className="text-xl mt-20">
-            Hi, I'm a 23-year-old computer science student.
-            After upper secondary school, I was interested in
-            making software and coding in general, and
-            because of this, I am now studying computer
-            science for the fifth year
+            Hi, I'm a software developer from Oulu with a
+            passion for building web and mobile applications.
+            My interest in software development started after
+            upper secondary school and has driven me to
+            complete a Master's degree in Software Development
+            at the University of Oulu.
             </p>
             <br />
             <p className="text-xl">
-            By nature, I am
-            determined, calm and confident. I like to work in
-            teams, and I am very motivated to try my skills on
-            the software development side. I'm not afraid to
-            work under pressure, and if I need to learn
-            something I've usually learned it and completed the
-            required task. So, I am quick learner and open to
-            new information.
+            By nature, I am determined, calm and confident.
+            I enjoy working in teams and take ownership of
+            my work. I adapt quickly to new challenges and
+            am always open to learning new technologies and
+            approaches.
             </p>
         </div>
     </div>
