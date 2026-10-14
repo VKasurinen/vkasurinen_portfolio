@@ -1,82 +1,95 @@
 import React from 'react'
-import {FaLinkedin} from "react-icons/fa"
+import {FaGithub, FaLinkedin} from "react-icons/fa"
+import {BsFillPersonFill} from "react-icons/bs"
+import {HiOutlineMail, HiOutlinePhone, HiOutlineLocationMarker} from "react-icons/hi"
 
 const Footer = () => {
+
+  const contacts = [
+    {
+      id: 1,
+      icon: <HiOutlinePhone size={20} />,
+      text: '+358 449750078',
+      href: 'tel:+358449750078',
+    },
+    {
+      id: 2,
+      icon: <HiOutlineMail size={20} />,
+      text: 'vaino.kasurinen@hotmail.fi',
+      href: 'mailto:vaino.kasurinen@hotmail.fi',
+    },
+    {
+      id: 3,
+      icon: <HiOutlineLocationMarker size={20} />,
+      text: 'Oulu, Pohjois-Pohjanmaa',
+    },
+  ]
+
+  const socials = [
+    {
+      id: 1,
+      icon: <FaLinkedin size={22} />,
+      text: 'LinkedIn',
+      href: 'https://www.linkedin.com/in/v%C3%A4in%C3%B6-kasurinen-75b006251/',
+    },
+    {
+      id: 2,
+      icon: <FaGithub size={22} />,
+      text: 'GitHub',
+      href: 'https://github.com/VKasurinen',
+    },
+    {
+      id: 3,
+      icon: <BsFillPersonFill size={22} />,
+      text: 'CV',
+      href: 'Väinö_Kasurinen_CV.pdf',
+      download: true,
+    },
+  ]
+
   return (
+    <footer name="footer" className="w-full bg-gradient-to-b from-gray-800 to-black text-white">
+      <div className="max-w-screen-lg mx-auto px-4 pt-20 pb-8">
 
-    <footer name="footer" className="p-32 leading-6 bg-gradient-to-b from-gray-800 to-black text-white">
-            <div className="w-full h-52 m-auto">
-                <div className="flex flex-wrap">
+        <div className="grid gap-12 md:grid-cols-2 text-center">
 
-                    <div className="w-1/2 text-center p-4">
-                        <h4 className="text-xl">Contact</h4>
-                        <ul>
-                            <li>
-                                +358 449750078
-                            </li>
-                            <li>
-                                vaino.kasurinen@hotmail.fi
-                            </li>
-                            <li>
-                                Oulu, Pohjois-Pohjanmaa
-                            </li>
+          <div className="flex flex-col items-center">
+            <p className="text-2xl font-bold inline border-b-4 border-gray-500">Contact</p>
+            <ul className="mt-8 space-y-4 text-left">
+              {contacts.map(({id, icon, text, href}) => (
+                <li key={id} className="flex items-center gap-3 text-gray-300">
+                  <span className="text-teal-500">{icon}</span>
+                  {href ? (
+                    <a href={href} className="hover:text-white duration-200 break-all">{text}</a>
+                  ) : (
+                    <span>{text}</span>
+                  )}
+                </li>
+              ))}
+            </ul>
+          </div>
 
-                        </ul>
-                    </div>
-
-                    <div className="w-1/2 text-center p-4">
-                        <h4 className="text-4xl text-white mb-16 relative">LinkedIn</h4>
-
-                        <div className="">
-                            
-                            <a target="_blank" rel="noreferrer" href="https://www.linkedin.com/in/v%C3%A4in%C3%B6-kasurinen-75b006251/" 
-                            className="inline-block h-12 w-12 items-center justify-center my-2 m-6 text-center leading-10 border-solid border rounded-sm hover:bg-neutral-400 duration-300">
-                              <FaLinkedin className="w-full h-full" />
-                            </a>
-                        </div>
-                    </div>
-                </div>
-
-                <div>
-                    <div className="w-4/5 m-auto pt-3 border-b border-solid pb-3"></div>
-                </div>
-
-                <div className="flex flex-wrap">
-                    <div className="w-full m-auto py-2 text-center">
-                        <p>© Väinö Kasurinen</p>
-                    </div>
-                </div>
-
+          <div className="flex flex-col items-center">
+            <p className="text-2xl font-bold inline border-b-4 border-gray-500">Connect</p>
+            <div className="mt-8 flex flex-wrap justify-center gap-4">
+              {socials.map(({id, icon, text, href, download}) => (
+                <a key={id} href={href} target="_blank" rel="noreferrer" download={download}
+                className="flex items-center gap-3 px-5 py-3 rounded-md bg-gray-800 border border-gray-700 text-gray-200 hover:text-white hover:border-teal-500 hover:bg-teal-900 duration-200">
+                  {icon}
+                  <span>{text}</span>
+                </a>
+              ))}
             </div>
-        </footer>
-    // <footer>
-    //     <div>
-    //       <div className="flex items-center justify-center m-auto">
-    //         <h1>Follow me</h1>
-    //         <div className="items-baseline">
-    //         <a href="https://www.linkedin.com/in/v%C3%A4in%C3%B6-kasurinen-75b006251/" target="_blank" rel="noreffer" className="flex justify-between items-center w-full text-white">
-                
-    //             <FaLinkedin className="text-black"/>
-    //         </a>
-    //         </div>
-    //       </div>
-    //     </div>
-    // </footer>
+          </div>
 
-    // <div name ="footer" className='w-full h-52 bg-gradient-to-b from-gray-800 to-black text-white'>
-    //     <div className='max-w-screen-lg p-4 mx-auto flex flex-row justify-center w-full h-full items-center'>
-    //         <h1 className="text-xl">Follow me</h1>
+        </div>
 
-    //         <div className="py-8 my-11">
-    //             <a href="https://www.linkedin.com/in/v%C3%A4in%C3%B6-kasurinen-75b006251/" target="_blank">
-                
-    //                 <FaGithub className="text-black"/>
-    //             </a>
-    //         </div>
-    //     </div>
-        
+        <div className="mt-16 pt-6 border-t border-gray-700 text-center text-sm text-gray-400">
+          <p>© {new Date().getFullYear()} Väinö Kasurinen</p>
+        </div>
 
-    // </div>
+      </div>
+    </footer>
   )
 }
 
