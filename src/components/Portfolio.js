@@ -1,5 +1,5 @@
 import React from 'react'
-import gamestorehome from "../assets/gamestorehome.png"
+import knock from "../assets/knock.png"
 import notemark from "../assets/notemark.png"
 import news from "../assets/news.png"
 
@@ -17,9 +17,9 @@ const Portfolio = () => {
         },
         {
             id: 2,
-            src: gamestorehome,
-            alt: "Game Store",
-            href: "https://github.com/VKasurinen/Game-Store"
+            src: knock,
+            alt: "Knock",
+            href: "https://github.com/VKasurinen/Knock"
 
         },
 
